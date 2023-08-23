@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                FUCK CSDN
-// @version             1.0.0
+// @version             1.0.1
 // @description         CSDN 增强工具
 // @author              unknown
 // @namespace           https://github.com/ultrazg/FUCK-CSDN
@@ -16,9 +16,9 @@
 (function () {
     'use strict';
 
-    const VERSION = '1.0.0';
-    const classNameArray = ['box-shadow', 'programmer1Box', 'programmer2Box', 'programmer3Box', 'programmer4Box', 'template-box', 'template-box', 'toolbar-advert','recommend-box','blog-footer-bottom'];
-    const idArray = ['recommendAdBox', 'asideNewNps', 'recommendNps','asideSearchArticle','asideHotArticle','asideArchive'];
+    const VERSION = '1.0.1';
+    const classNameArray = ['box-shadow', 'programmer1Box', 'programmer2Box', 'programmer3Box', 'programmer4Box', 'template-box', 'template-box', 'toolbar-advert', 'recommend-box', 'blog-footer-bottom', 'sidetool-writeguide-box', 'btn-side-chatdoc-contentbox'];
+    const idArray = ['recommendAdBox', 'asideNewNps', 'recommendNps', 'asideSearchArticle', 'asideHotArticle', 'asideArchive', 'footerRightAds', 'asideWriteGuide'];
     const toolBarBoxDom = `
         <li style="color: forestgreen;user-select: none">正在优化 CSDN 的浏览体验。</li><li><a style="color: cornflowerblue" href="https://github.com/ultrazg/FUCK-CSDN/issues" target="_blank">[反馈]</a></li>
         `;
@@ -36,6 +36,7 @@
     }
 
     function printInfo() {
+        console.clear()
         console.log(`%cFUCK YOU CSDN ${VERSION}`, "color:darkorange;background:#57606f;padding:5px;border-radius:8px;font-family:SimSun;font-size:8px");
     }
 
